@@ -1,6 +1,6 @@
-import streamlit as st
-import numpy as np
-import time
+import streamlit as st 
+import numpy as np 
+import time 
 import base64
 
 st.set_page_config(page_title="Tic Tac Toe", layout="centered")
@@ -11,7 +11,7 @@ st.markdown(""" <style> .main { background-color: black; } .block-container { pa
 
 st.markdown('<div class="title">Tic Tac Toe</div>', unsafe_allow_html=True)
 
-Load sounds
+# Load sounds
 
 win_sound = """ data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEAESsAACJWAAACABAAZGF0YcQAAAAA/////wD///8A////AP///wD///8A////AP///wD///8A"""  # short click click_sound = """ data:audio/wav;base64,UklGRkQAAABXQVZFZm10IBAAAAABAAEAIlYAAESsAAACABAAZGF0YcQAAAAA/////wD///8A////AP///wD///8A////AP///wD///8A"""  # short click
 
@@ -37,5 +37,3 @@ st.markdown("""
 if st.session_state.winner: st.markdown(f"<div class='winner'>{st.session_state.winner} wins!</div>", unsafe_allow_html=True)
 
 if st.button("Reset Game"): reset_game()
-
-
