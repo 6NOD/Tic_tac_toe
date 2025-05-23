@@ -1,4 +1,7 @@
-import streamlit as st import numpy as np import time import base64
+import streamlit as st
+import numpy as np
+import time
+import base64
 
 st.set_page_config(page_title="Tic Tac Toe", layout="centered")
 
